@@ -19,12 +19,17 @@
     src: url(../assets/fonts/Dinosaur-Alt.ttf);
 }
 
+@font-face {
+    font-family: Georgia;
+    src: url(../assets/fonts/georgia.ttf);
+}
+
 html, body{
     margin: 0;
  min-height: 100vh;
     height: -webkit-fill-available;
     scroll-behavior: smooth;  
-    background-image: url(../assets/img/Fondo.jpg);
+    background-image: url(../assets/img/Fondo3.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -32,6 +37,18 @@ html, body{
     overflow: auto;
 
 }
+
+nav{
+    position: fixed;
+}
+
+nav img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
 section{
   
     min-height: 100vh;
@@ -42,7 +59,7 @@ section{
 
 section div{
     text-align: center;
-    padding-top: 250px;
+    padding-top: 150px;
     width: 100%;
     min-height: 100%;
     
@@ -74,7 +91,7 @@ section div h3{
 }
 
 #Bienvenida div{
-    padding-top: 200px;
+    padding-top: 100px;
 }
 
 section div p{
@@ -94,3 +111,20 @@ section div p{
     margin-right: auto;
     width: 80%;
 }
+
+footer {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    position: fixed;
+    margin:0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 45px;
+    background-color: #909859;
+    color: black;
+    text-align: center;
+    font-size: 15px;
+  }
+  footer h2{
+      margin-top: 8px;
+  }
