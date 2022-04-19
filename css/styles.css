@@ -9,25 +9,39 @@
     src: url(../assets/fonts/offthedrugs.ttf);
 }
 
+@font-face {
+    font-family:New-york ;
+    src: url(../assets/fonts/NewYork\ PERSONAL\ USE.otf);
+}
+html, body{
+    margin: 0;
+ min-height: 100vh;
+    height: -webkit-fill-available;
+}
 section{
     background-image: url(../assets/img/Fondo2.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    height: 100vh;
+    min-height: 100vh;
     
 }
 
 
 section div{
     text-align: center;
-    padding-top: 250px;
+    padding-top: 300px;
     width: 100%;
+    
 }
 
 section div h2{
     font-family:drugs;
+    color:#351507;
+    
+    
 }
 
 section div p{
-    font-family: sans-serif;
+    font-family: New-york;
+    
 }
