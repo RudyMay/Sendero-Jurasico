@@ -1,16 +1,16 @@
 
 @font-face {
     font-family: Dinosaur;
-    src: url(/assets/fonts/Dinosaur.ttf);
+    src: url(../assets/fonts/Dinosaur.ttf);
 }
 
 @font-face {
     font-family: drugs;
-    src: url(/assets/fonts/offthedrugs.ttf);
+    src: url(../assets/fonts/offthedrugs.ttf);
 }
 
 section{
-    background-image: url(/assets/img/Fondo2.jpg);
+    background-image: url(../assets/img/Fondo2.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
