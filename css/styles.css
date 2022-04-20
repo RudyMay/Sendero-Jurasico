@@ -38,15 +38,45 @@ html, body{
 
 }
 
-nav{
-    position: fixed;
+header{
+    background-color: #351507;
 }
 
-nav img{
+
+nav{
+    position: fixed;
+    min-height: 70px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+}
+
+.nav-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.hamburger{
+    display:none;
+    cursor: pointer;
+}
+
+.bar{
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 80%;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-trasition:all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+}
+
+.nav-branding img{
+    display: block;
+    margin-left: 15px;
 }
 
 section{
@@ -59,7 +89,6 @@ section{
 
 section div{
     text-align: center;
-    padding-top: 150px;
     width: 100%;
     min-height: 100%;
     
@@ -73,6 +102,10 @@ section div h2{
     color:#351507;
     
     
+}
+
+#Intro div{
+    padding-top: 150px;
 }
 
 #Intro div h2{
@@ -112,8 +145,16 @@ section div p{
     width: 80%;
 }
 
+.imgCap{
+    padding-top: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+
 footer {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: Georgia;
     position: fixed;
     margin:0;
     left: 0;
@@ -128,3 +169,70 @@ footer {
   footer h2{
       margin-top: 8px;
   }
+
+
+  @media(max-width:768px){
+      
+    #listaCapitulos{
+        display: none;
+    }
+    #logoProgreso{
+        margin-top:-18px;
+    }
+      .hamburger{
+          display: block;
+      }
+      .hamburger.active .bar:nth-child(2){
+          opacity:0;
+      }
+      .hamburger.active .bar:nth-child(1){
+       transform: translateY(8px) rotate(45deg);
+      }
+      .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+       }
+
+       .nav-menu{
+           position: fixed;
+           left:-113%;
+           top:70px;
+           flex-direction: column;
+           background-color: #DF7243;
+           width: 100%;
+           text-align: center;
+           transition: 0.3s;
+       }
+
+       .nav-item{
+           list-style-type: none;
+          
+            margin-left: -65px;
+        
+       }
+       .nav-menu.active{
+           left: 0;
+       }
+
+       .nav-link{
+           text-decoration: none;
+           left: -10px;
+           font-family: drugs;
+           font-size: 20px;
+           color: white;
+       }
+
+
+
+  }
+
+  @media(max-width:450px) and (min-width:400px){
+      .nav-branding img{
+          margin-left: 63px;
+      }
+  }
+
+  @media(max-width:399px) and (min-width:350px){
+        .nav-branding img{
+            margin-left: 45px;
+        }
+}
