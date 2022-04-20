@@ -36,16 +36,16 @@
                <a href="#Capitulo6" class="nav-link">Capitulo 6</a>
            </li>
            <li class="nav-item">
-               <a href="" class="nav-link">Capitulo 7</a>
+               <a href="#Capitulo7" class="nav-link">Capitulo 7</a>
            </li>
            <li class="nav-item">
-               <a href="" class="nav-link">Capitulo 8</a>
+               <a href="#Capitulo8" class="nav-link">Capitulo 8</a>
            </li>
            <li class="nav-item">
-               <a href="" class="nav-link">Capitulo 9</a>
+               <a href="#Capitulo9" class="nav-link">Capitulo 9</a>
            </li>
            <li class="nav-item">
-               <a href="" class="nav-link">Capitulo 10</a>
+               <a href="#Capitulo10" class="nav-link">Capitulo 10</a>
            </li>
            <li class="nav-item">
                <a href="" class="nav-link">
@@ -92,7 +92,7 @@
 </div>
 <section id="Capitulo1" >
     <div>
-        <img src="assets/img/Cap1.png" class="imgCap">
+        <img src="assets/img/Capi1.png" class="imgCap">
         <h2>
             Capitulo 1
         </h2>
@@ -110,12 +110,12 @@
     
 <section id="Capitulo2">
     <div>
-        <img src="assets/img/cap2.png" class="imgCap">
+        <img src="assets/img/cap4.png" class="imgCap">
         <h2>
             Capitulo 2
         </h2>
         <h3>Una serie de eventos catastróficos</h3>
-        <p>Éstas en el lugar donde todo comenzó o más bien terminó...</p>
+        <p>El impacto del asteroide cambió para siempre la vida en la Tierra.</p>
         <a onclick="modal2.open()">
         <img src="assets/img/play.png" alt="" width="70px" height="auto">
         </a>
@@ -135,9 +135,12 @@
         <h2>
             Capitulo 3
         </h2>
-        <h3>¿Quién es este dinosaurio?</h3>
-        <p>Éstas en el lugar donde todo comenzó o más bien terminó...</p>
+        <h3>El bosque protector</h3>
+        <p>Descubre la protección que ofrecen los manglares</p>
+        <a onclick="modal3.open()">
         <img src="assets/img/play.png" alt="" width="70px" height="auto">
+        </a>
+        
 
        
 
@@ -167,11 +170,11 @@
     
 <section id="Capitulo5">
     <div>
-        <img src="assets/img/Cap1.png" class="imgCap">
+        <img src="assets/img/Cap5.png" class="imgCap">
         <h2>
             Capitulo 5
         </h2>
-        <h3>Proximamente</h3>
+        <h3>La muerte del T-Rex</h3>
         <p>Éstas en el lugar donde todo comenzó o más bien terminó...</p>
         <img src="assets/img/play.png" alt="" width="70px" height="auto">
 
@@ -180,6 +183,83 @@
     </div>
 </section>
 
+
+<section id="Capitulo6">
+    <div>
+        <!--<img src="assets/img/Cap5.png" class="imgCap">-->
+        <h2>
+            Capitulo 6
+        </h2>
+        <h3>Los cumpleaños de la tierra</h3>
+        <p>Proximo..</p>
+        <img src="assets/img/play.png" alt="" width="70px" height="auto">
+
+       
+
+    </div>
+</section>
+
+
+<section id="Capitulo7">
+    <div>
+        <img src="assets/img/Cap1.png" class="imgCap">
+        <h2>
+            Capitulo 7
+        </h2>
+        <h3>Evidencia forense</h3>
+        <p>Proximo..</p>
+        <img src="assets/img/play.png" alt="" width="70px" height="auto">
+
+       
+
+    </div>
+</section>
+
+
+<section id="Capitulo8">
+    <div>
+        <img src="assets/img/cap8.png" class="imgCap">
+        <h2>
+            Capitulo 8
+        </h2>
+        <h3>Fósiles, las piezas del rompecabezas terrestre</h3>
+        <p>Proximo..</p>
+        <img src="assets/img/play.png" alt="" width="70px" height="auto">
+
+       
+
+    </div>
+</section>
+
+<section id="Capitulo9">
+    <div>
+        <img src="assets/img/Capi1.png" class="imgCap">
+        <h2>
+            Capitulo 9
+        </h2>
+        <h3>Las cinco grandes extinciones</h3>
+        <p>Proximo..</p>
+        <img src="assets/img/play.png" alt="" width="70px" height="auto">
+
+       
+
+    </div>
+</section>
+
+<section id="Capitulo10">
+    <div>
+        <img src="assets/img/cap10.png" class="imgCap">
+        <h2>
+            Capitulo 10
+        </h2>
+        <h3>El imperio de los mamíferos</h3>
+        <p>Proximo..</p>
+        <img src="assets/img/play.png" alt="" width="70px" height="auto">
+
+       
+
+    </div>
+</section>
 <footer>
     
     
@@ -187,19 +267,23 @@
 
 </footer>
 
+
 <script src="javascript/main.js"></script>
 <script src="javascript/tingle.js"></script>
 <script>
     var modal = new tingle.modal({
+        
     footer: true,
     stickyFooter: false,
     closeMethods: ['overlay', 'button', 'escape'],
     closeLabel: "Close",
     cssClass: ['custom-class-1', 'custom-class-2'],
     onOpen: function() {
+        
         console.log('modal open');
     },
     onClose: function() {
+    
         console.log('modal closed');
     },
     beforeClose: function() {
@@ -212,9 +296,10 @@
 
 
 modal.setContent('<h2>Capitulo 1</h2>');
+modal.setFooterContent('<audio src="assets/podcasts/Capitulo-1.wav" controls controlsList="nodownload">')
 
 // add a button
-modal.setFooterContent('<audio src="assets/podcasts/Capitulo-1.wav" controls>');
+
 
 var modal2 = new tingle.modal({
     footer: true,
@@ -239,7 +324,7 @@ var modal2 = new tingle.modal({
 modal2.setContent('<h2>Capitulo 2</h2>');
 
 // add a button
-modal2.setFooterContent('<audio src="assets/podcasts/Capitulo2.wav" controls>');
+modal2.setFooterContent('<audio src="assets/podcasts/Capitulo2.wav" controls controlsList="nodownload">');
 
 
 
@@ -262,6 +347,13 @@ var modal3 = new tingle.modal({
         return false; // nothing happens
     }
 });
+modal3.setContent('<h2>Capitulo 3</h2>');
+
+// add a button
+modal3.setFooterContent('<audio src="assets/podcasts/Capitulo3.wav" controls controlsList="nodownload">');
+
+
+
 var modal4 = new tingle.modal({
     footer: true,
     stickyFooter: false,
