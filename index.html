@@ -157,8 +157,11 @@
             Capitulo 4
         </h2>
         <h3>Guardianes de la armonía</h3>
-        <p>Éstas en el lugar donde todo comenzó o más bien terminó...</p>
+        <p>Proximo..</p>
+        <a onclick="modal4.open()">
         <img src="assets/img/play.png" alt="" width="70px" height="auto">
+        </a>
+        
 
        
 
@@ -175,7 +178,7 @@
             Capitulo 5
         </h2>
         <h3>La muerte del T-Rex</h3>
-        <p>Éstas en el lugar donde todo comenzó o más bien terminó...</p>
+        <p>Proximo</p>
         <img src="assets/img/play.png" alt="" width="70px" height="auto">
 
        
@@ -295,7 +298,7 @@
 });
 
 
-modal.setContent('<h2>Capitulo 1</h2>');
+modal.setContent('<img src="assets/img/Capi1.png" style="display:block width="150">');
 modal.setFooterContent('<audio src="assets/podcasts/Capitulo-1.wav" controls controlsList="nodownload">')
 
 // add a button
@@ -321,7 +324,7 @@ var modal2 = new tingle.modal({
     }
 });
 
-modal2.setContent('<h2>Capitulo 2</h2>');
+modal2.setContent('<img src="assets/img/cap4.png" style="display:block width="150">');
 
 // add a button
 modal2.setFooterContent('<audio src="assets/podcasts/Capitulo2.wav" controls controlsList="nodownload">');
@@ -347,7 +350,7 @@ var modal3 = new tingle.modal({
         return false; // nothing happens
     }
 });
-modal3.setContent('<h2>Capitulo 3</h2>');
+modal3.setContent('<img src="assets/img/cap3.png" style="display:block width="150">');
 
 // add a button
 modal3.setFooterContent('<audio src="assets/podcasts/Capitulo3.wav" controls controlsList="nodownload">');
@@ -373,6 +376,14 @@ var modal4 = new tingle.modal({
         return false; // nothing happens
     }
 });
+
+modal4.setContent('<img src="assets/img/cap4.png" style="display:block width="150">');
+
+// add a button
+modal4.setFooterContent('<audio src="assets/podcasts/Capitulo4.wav" controls controlsList="nodownload">');
+
+
+
 var modal5 = new tingle.modal({
     footer: true,
     stickyFooter: false,
