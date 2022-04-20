@@ -15,7 +15,7 @@
 
        <ul class="nav-menu">
            <li class="nav-item">
-               <a href="" class="nav-link">Bienvenida</a>
+               <a href="#Bienvenida" class="nav-link">Bienvenida</a>
            </li>
            <li class="nav-item">
                <a href="#Capitulo1" class="nav-link">Capitulo 1</a>
@@ -187,36 +187,7 @@
 <script src="javascript/main.js"></script>
 <script src="javascript/tingle.js"></script>
 <script>
-    var modal = new tingle.modal({
-    footer: true,
-    stickyFooter: false,
-    closeMethods: ['overlay', 'button', 'escape'],
-    closeLabel: "Close",
-    cssClass: ['custom-class-1', 'custom-class-2'],
-    onOpen: function() {
-        console.log('modal open');
-    },
-    onClose: function() {
-        console.log('modal closed');
-    },
-    beforeClose: function() {
-        // here's goes some logic
-        // e.g. save content before closing the modal
-        return true; // close the modal
-        return false; // nothing happens
-    }
-});
-
-// set content
-modal.setContent('<h2>Capitulo 1</h2>');
-
-// add a button
-modal.setFooterContent('<audio src="assets/podcasts/Capitulo-1.wav" controls>');
-    // here goes some logic
-   
-
-
-// add another button
+    
 
 </script>
 </body>
