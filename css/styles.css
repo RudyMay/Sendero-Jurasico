@@ -114,7 +114,7 @@ section div h2{
     font-family:drugs;
     color:#351507;
     
-    
+
 }
 
 section div h3{
@@ -129,12 +129,16 @@ section div h3{
 
 section div p{
     font-family: New-york;
-    font-size: 24px;
+    font-size: 20px;
     color: #351507;
+    margin-left: 10px;
+    margin-right:10px
 }
 #Intro div p{
-    font-size: 28px;
+    font-size: 25px;
     font-family: New-york;
+    margin-left: 10px;
+    margin-right: 10px;
     
 }
 
