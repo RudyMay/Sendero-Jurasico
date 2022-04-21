@@ -39,7 +39,7 @@ html, body{
     background-repeat: no-repeat;
     background-attachment: fixed;
     scroll-snap-type: y mandatory;
-    overflow: hidden;
+    overflow: auto;
 
 }
 
@@ -203,9 +203,6 @@ footer {
     #listaCapitulos{
         display: none;
     }
-    #logoProgreso{
-        margin-top:-28px;
-    }
       .hamburger{
           display: block;
       }
@@ -263,9 +260,6 @@ footer {
     #listaCapitulos{
         display: none;
     }
-    #logoProgreso{
-        margin-top:-28px;
-    }
       .hamburger{
           display: block;
       }
@@ -288,17 +282,20 @@ footer {
            width: 100%;
            text-align: center;
            transition: 0.3s;
-           height: 90%;
+           height: 90vh;
        }
 
        .nav-item{
            list-style-type: none;
-          
+          border-top: solid 1px white;
             margin-left: -65px;
+            width: 90%;
+
         
        }
        .nav-menu.active{
            left: 0;
+           overflow: scroll;
        }
 
        .nav-link{
