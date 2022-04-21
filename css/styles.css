@@ -39,7 +39,7 @@ html, body{
     background-repeat: no-repeat;
     background-attachment: fixed;
     scroll-snap-type: y mandatory;
-    overflow: auto;
+    overflow: hidden;
 
 }
 
