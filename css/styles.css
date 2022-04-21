@@ -107,6 +107,7 @@ section div h2{
     font-family:Dinosaur2;
     color:#351507;
     
+    text-shadow: -.5px 0 white, 0 .5px white, .5px 0 white, 0 -.5px white;
     
 }
 
@@ -119,6 +120,7 @@ section div h2{
     font-size: 36px;
     font-family:drugs;
     color:#351507;
+    text-shadow: -.5px 0 white, 0 .5px white, .5px 0 white, 0 -.5px white;
     
 
 }
@@ -127,6 +129,8 @@ section div h3{
     font-family: drugs;
     font-size: 28px;
     color:#351507;
+    text-shadow: -.5px 0 white, 0 .5px white, .5px 0 white, 0 -.5px white;
+
 }
 
 
@@ -136,11 +140,13 @@ section div p{
     font-weight: bold;
     color: #351507;
     margin-left: 10px;
-    margin-right:10px
+    margin-right:10px;
+    text-shadow: -.5px 0 white, 0 .5px white, .5px 0 white, 0 -.5px white;
+
 }
 #Intro div p{
     font-size: 25px;
-    font-family: New-york;
+    font-family:PlayFair;
     margin-left: 10px;
     margin-right: 10px;
     
@@ -252,7 +258,7 @@ footer {
         display: block;
         margin-left: auto;
         margin-right: auto;
-        width: 65%;
+        width: 50%;
     }
     #listaCapitulos{
         display: none;
