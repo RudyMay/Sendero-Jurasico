@@ -129,9 +129,6 @@ section div h3{
     color:#351507;
 }
 
-#Bienvenida div{
-    padding-top: 150px;
-}
 
 section div p{
     font-family: Playfair;
@@ -149,19 +146,12 @@ section div p{
     
 }
 
- #dinosaurio1{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 80%;
-}
-
 .imgCap{
     padding-top: 100px;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 65%;
+    width: 55%;
 }
 
 footer {
