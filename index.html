@@ -308,10 +308,11 @@
     closeLabel: "Cerrar",
     cssClass: ['custom-class-1', 'custom-class-2'],
     onOpen: function() {
-        
+        modal.setFooterContent('<audio src="assets/podcasts/Capitulo-1.wav" controls controlsList="nodownload" id="audio1">')
         console.log('modal open');
     },
     onClose: function() {
+        document.querySelector('#audio1').pause();
     
         console.log('modal closed');
     },
@@ -325,7 +326,7 @@
 
 
 
-modal.setFooterContent('<audio src="assets/podcasts/Capitulo-1.wav" controls controlsList="nodownload">')
+
 
 // add a button
 
@@ -337,9 +338,12 @@ var modal2 = new tingle.modal({
     closeLabel: "Cerrar",
     cssClass: ['custom-class-1', 'custom-class-2'],
     onOpen: function() {
+        modal2.setFooterContent('<audio src="assets/podcasts/Capitulo2.wav" controls controlsList="nodownload" id="audio2">')
         console.log('modal open');
     },
     onClose: function() {
+        document.querySelector('#audio2').pause();
+    
         console.log('modal closed');
     },
     beforeClose: function() {
@@ -353,7 +357,7 @@ var modal2 = new tingle.modal({
 
 
 // add a button
-modal2.setFooterContent('<audio src="assets/podcasts/Capitulo2.wav" controls controlsList="nodownload">');
+
 
 
 
@@ -364,9 +368,12 @@ var modal3 = new tingle.modal({
     closeLabel: "Cerrar",
     cssClass: ['custom-class-1', 'custom-class-2'],
     onOpen: function() {
+        modal3.setFooterContent('<audio src="assets/podcasts/Capitulo3.wav" controls controlsList="nodownload" id="audio3">')
         console.log('modal open');
     },
     onClose: function() {
+        document.querySelector('#audio3').pause();
+    
         console.log('modal closed');
     },
     beforeClose: function() {
@@ -379,9 +386,6 @@ var modal3 = new tingle.modal({
 
 
 // add a button
-modal3.setFooterContent('<audio src="assets/podcasts/Capitulo3.wav" controls controlsList="nodownload">');
-
-
 
 var modal4 = new tingle.modal({
     footer: true,
@@ -390,9 +394,12 @@ var modal4 = new tingle.modal({
     closeLabel: "Cerrar",
     cssClass: ['custom-class-1', 'custom-class-2'],
     onOpen: function() {
+        modal4.setFooterContent('<audio src="assets/podcasts/Capitulo4.wav" controls controlsList="nodownload" id="audio4">')
         console.log('modal open');
     },
     onClose: function() {
+        document.querySelector('#audio4').pause();
+    
         console.log('modal closed');
     },
     beforeClose: function() {
@@ -402,11 +409,6 @@ var modal4 = new tingle.modal({
         return false; // nothing happens
     }
 });
-
-
-
-// add a button
-modal4.setFooterContent('<audio src="assets/podcasts/Capitulo4.wav" controls controlsList="nodownload">');
 
 
 
@@ -417,9 +419,12 @@ var modal5 = new tingle.modal({
     closeLabel: "Cerrar",
     cssClass: ['custom-class-1', 'custom-class-2'],
     onOpen: function() {
+        modal5.setFooterContent('<audio src="" controls controlsList="nodownload">')
         console.log('modal open');
     },
     onClose: function() {
+        document.querySelector('audio').pause();
+    
         console.log('modal closed');
     },
     beforeClose: function() {
@@ -436,9 +441,12 @@ var modal6 = new tingle.modal({
     closeLabel: "Cerrar",
     cssClass: ['custom-class-1', 'custom-class-2'],
     onOpen: function() {
+        modal6.setFooterContent('<audio src="" controls controlsList="nodownload">')
         console.log('modal open');
     },
     onClose: function() {
+        document.querySelector('audio').pause();
+    
         console.log('modal closed');
     },
     beforeClose: function() {
@@ -455,9 +463,12 @@ var modal7 = new tingle.modal({
     closeLabel: "Cerrar",
     cssClass: ['custom-class-1', 'custom-class-2'],
     onOpen: function() {
+        modal7.setFooterContent('<audio src="" controls controlsList="nodownload">')
         console.log('modal open');
     },
     onClose: function() {
+        document.querySelector('audio').pause();
+    
         console.log('modal closed');
     },
     beforeClose: function() {
@@ -474,12 +485,16 @@ var modal8 = new tingle.modal({
     closeLabel: "Cerrar",
     cssClass: ['custom-class-1', 'custom-class-2'],
     onOpen: function() {
+        modal8.setFooterContent('<audio src="" controls controlsList="nodownload">')
         console.log('modal open');
     },
     onClose: function() {
+        document.querySelector('audio').pause();
+    
         console.log('modal closed');
     },
     beforeClose: function() {
+        
         // here's goes some logic
         // e.g. save content before closing the modal
         return true; // close the modal
@@ -493,9 +508,12 @@ var modal9 = new tingle.modal({
     closeLabel: "Cerrar",
     cssClass: ['custom-class-1', 'custom-class-2'],
     onOpen: function() {
+        modal9.setFooterContent('<audio src="" controls controlsList="nodownload">')
         console.log('modal open');
     },
     onClose: function() {
+        document.querySelector('audio').pause();
+    
         console.log('modal closed');
     },
     beforeClose: function() {
@@ -512,9 +530,12 @@ var modal10 = new tingle.modal({
     closeLabel: "Cerrar",
     cssClass: ['custom-class-1', 'custom-class-2'],
     onOpen: function() {
+        modal10.setFooterContent('<audio src="" controls controlsList="nodownload">')
         console.log('modal open');
     },
     onClose: function() {
+        document.querySelector('audio').pause();
+    
         console.log('modal closed');
     },
     beforeClose: function() {

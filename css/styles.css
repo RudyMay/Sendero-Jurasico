@@ -85,7 +85,7 @@ nav{
 
 section{
   
-    min-height: 95vh;
+    min-height: 100vh;
     scroll-snap-align: start;
     
 }
@@ -251,11 +251,11 @@ footer {
 
   @media (max-width:766px){
     .imgCap{
-        padding-top: 100px;
+        padding-top: 70px;
         display: block;
         margin-left: auto;
         margin-right: auto;
-        width: 55%;
+        width: 50%;
     }
     #listaCapitulos{
         display: none;
