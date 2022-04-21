@@ -31,7 +31,6 @@
 }
 html, body{
     margin: 0;
- min-height: 100vh;
     height: -webkit-fill-available;
     scroll-behavior: smooth;  
     background-image: url(../assets/img/Fondo3.png);
@@ -86,7 +85,7 @@ nav{
 
 section{
   
-    min-height: 90vh;
+    min-height: 95vh;
     scroll-snap-align: start;
     
 }
