@@ -86,7 +86,7 @@ nav{
 
 section{
   
-    min-height: 100vh;
+    min-height: 90vh;
     scroll-snap-align: start;
     
 }
@@ -106,7 +106,7 @@ section div h2{
     font-size: 32px;
     font-family:Dinosaur2;
     color:#351507;
-    
+    letter-spacing: 3px;
     text-shadow: -.5px 0 white, 0 .5px white, .5px 0 white, 0 -.5px white;
     
 }
@@ -127,6 +127,7 @@ section div h2{
 
 section div h3{
     font-family: drugs;
+    letter-spacing: 1px;
     font-size: 28px;
     color:#351507;
     text-shadow: -.5px 0 white, 0 .5px white, .5px 0 white, 0 -.5px white;
