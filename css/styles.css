@@ -35,7 +35,7 @@ html, body{
     height: -webkit-fill-available;
     scroll-behavior: smooth;  
     background-image: url(../assets/img/Fondo3.png);
-    /*background-size: cover;*/
+    background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     scroll-snap-type: y mandatory;
@@ -180,10 +180,30 @@ footer {
   footer h2{
       margin-top: 8px;
   }
+@media (min-width:767px) and (max-width:800px){
+    .nav-branding img{
+        margin-left: 225px;
+        width: 50%;
+    }
+}
 
 
-  @media(max-width:768px){
-      
+@media (min-width:900px) and (max-width:1025px){
+    .nav-branding img{
+        margin-left: 324px;
+        width: 45%;
+    }
+
+}
+
+@media(min-width:767px) and (max-width:1025px){
+    .imgCap{
+        padding-top: 100px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 40%;
+    }
     #listaCapitulos{
         display: none;
     }
@@ -212,6 +232,67 @@ footer {
            width: 100%;
            text-align: center;
            transition: 0.3s;
+       }
+
+       .nav-item{
+           list-style-type: none;
+          
+            margin-left: -65px;
+        
+       }
+       .nav-menu.active{
+           left: 0;
+       }
+
+       .nav-link{
+           text-decoration: none;
+           left: -10px;
+           font-family: drugs;
+           font-size: 20px;
+           color: white;
+       }
+
+
+}
+
+
+  @media (max-width:766px){
+    .imgCap{
+        padding-top: 100px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 65%;
+    }
+    #listaCapitulos{
+        display: none;
+    }
+    #logoProgreso{
+        margin-top:-28px;
+    }
+      .hamburger{
+          display: block;
+      }
+      .hamburger.active .bar:nth-child(2){
+          opacity:0;
+      }
+      .hamburger.active .bar:nth-child(1){
+       transform: translateY(8px) rotate(45deg);
+      }
+      .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+       }
+
+       .nav-menu{
+           position: fixed;
+           left:-113%;
+           top:70px;
+           flex-direction: column;
+           background-color: #DF7243;
+           width: 100%;
+           text-align: center;
+           transition: 0.3s;
+           height: 90%;
        }
 
        .nav-item{
