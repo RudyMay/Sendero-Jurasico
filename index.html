@@ -191,7 +191,10 @@
         </h2>
         <h3>Una manada para sobrevivir</h3>
         <p>Un hallazgo en los confines del mundo</p>
-        <img src="assets/img/play.png" alt="" width="70px" height="auto">
+        <a onclick="modal5.open()"> 
+            <img src="assets/img/play.png" alt="" width="70px" height="auto">
+        </a>
+        
         <br>
         <br>
         <a href="#Capitulo6"style="text-decoration: none!important; font-size:18px; font-family:Playfair; color:#351507; font-weight:bold;text-shadow: -.5px 0 white, 0 .5px white, .5px 0 white, 0 -.5px white;">Capítulo 6<br><br><img class="bounce2 flecha" src="assets/img/flecha.png" alt="" width="30px" ></a>
@@ -210,7 +213,10 @@
         </h2>
         <h3>Los cumpleaños de la tierra</h3>
         <p>Una historia de más de 4 mil 568 millones de años</p>
-        <img src="assets/img/play.png" alt="" width="70px" height="auto">
+        <a onclick="modal6.open()">
+            <img src="assets/img/play.png" alt="" width="70px" height="auto">
+        </a>
+        
         <br>
         <br>
         <a href="#Capitulo7"style="text-decoration: none!important; font-size:18px; font-family:Playfair; color:#351507; font-weight:bold;text-shadow: -.5px 0 white, 0 .5px white, .5px 0 white, 0 -.5px white;">Capítulo 7<br><br><img class="bounce2 flecha" src="assets/img/flecha.png" alt="" width="30px" ></a>
@@ -229,8 +235,9 @@
         </h2>
         <h3>Evidencia forense</h3>
         <p>Restos en piedra que nos cuentan lo que le pasó hace millones de años</p>
+        <a onclick="modal7.open()">
         <img src="assets/img/play.png" alt="" width="70px" height="auto">
-
+        </a>
         <br>
         <br>
         <a href="#Capitulo8"style="text-decoration: none!important; font-size:18px; font-family:Playfair; color:#351507; font-weight:bold;text-shadow: -.5px 0 white, 0 .5px white, .5px 0 white, 0 -.5px white;">Capítulo 8<br><br><img class="bounce2 flecha" src="assets/img/flecha.png" alt="" width="30px" ></a>
@@ -248,9 +255,9 @@
         </h2>
         <h3>Fósiles, las piezas del rompecabezas terrestre</h3>
         <p>De organismos celulares hasta un curioso mapache</p>
-        <img src="assets/img/play.png" alt="" width="70px" height="auto">
-
-       
+        <a onclick="modal8.open()">
+            <img src="assets/img/play.png" alt="" width="70px" height="auto">
+        </a>
         <br>
         <br>
         <a href="#Capitulo9"style="text-decoration: none!important; font-size:18px; font-family:Playfair; color:#351507; font-weight:bold;text-shadow: -.5px 0 white, 0 .5px white, .5px 0 white, 0 -.5px white;">Capítulo 9<br><br><img class="bounce2 flecha" src="assets/img/flecha.png" alt="" width="30px" ></a>
@@ -266,7 +273,10 @@
         </h2>
         <h3>Las cinco grandes extinciones</h3>
         <p>Seres vivos que habitaron la Tierra antes que la humanidad</p>
-        <img src="assets/img/play.png" alt="" width="70px" height="auto">
+        <a onclick="">
+            <img src="assets/img/play.png" alt="" width="70px" height="auto">
+        </a>
+        
 
         <br>
         <br>
@@ -284,8 +294,9 @@
         </h2>
         <h3>El imperio de los mamíferos</h3>
         <p>Se vacían los océanos y nueva vida puebla el planeta</p>
-        
+        <a onclick="">
         <img src="assets/img/play.png" alt="" width="70px" height="auto">
+        </a>
         <br>
         <br>
         <a href="#Capitulo1"style="text-decoration: none!important; font-size:18px; font-family:Playfair; color:#351507; font-weight:bold;text-shadow: -.5px 0 white, 0 .5px white, .5px 0 white, 0 -.5px white;">Volver al inicio<br><br><img class="bounce2 flecha" src="assets/img/flecha.png" alt="" width="30px" ></a>
@@ -419,11 +430,11 @@ var modal5 = new tingle.modal({
     closeLabel: "Cerrar",
     cssClass: ['custom-class-1', 'custom-class-2'],
     onOpen: function() {
-        modal5.setFooterContent('<audio src="" controls controlsList="nodownload">')
+        modal5.setFooterContent('<audio src="assets/podcasts/Capitulo5.wav" controls controlsList="nodownload" id="audio5">')
         console.log('modal open');
     },
     onClose: function() {
-        document.querySelector('audio').pause();
+        document.querySelector('#audio5').pause();
     
         console.log('modal closed');
     },
@@ -441,11 +452,11 @@ var modal6 = new tingle.modal({
     closeLabel: "Cerrar",
     cssClass: ['custom-class-1', 'custom-class-2'],
     onOpen: function() {
-        modal6.setFooterContent('<audio src="" controls controlsList="nodownload">')
+        modal6.setFooterContent('<audio src="assets/podcasts/Capitulo6.wav" controls controlsList="nodownload" id="audio6">')
         console.log('modal open');
     },
     onClose: function() {
-        document.querySelector('audio').pause();
+        document.querySelector('#audio6').pause();
     
         console.log('modal closed');
     },
@@ -463,11 +474,11 @@ var modal7 = new tingle.modal({
     closeLabel: "Cerrar",
     cssClass: ['custom-class-1', 'custom-class-2'],
     onOpen: function() {
-        modal7.setFooterContent('<audio src="" controls controlsList="nodownload">')
+        modal7.setFooterContent('<audio src="assets/podcasts/Capitulo7.wav" controls controlsList="nodownload" id="audio7">')
         console.log('modal open');
     },
     onClose: function() {
-        document.querySelector('audio').pause();
+        document.querySelector('#audio7').pause();
     
         console.log('modal closed');
     },
@@ -485,11 +496,11 @@ var modal8 = new tingle.modal({
     closeLabel: "Cerrar",
     cssClass: ['custom-class-1', 'custom-class-2'],
     onOpen: function() {
-        modal8.setFooterContent('<audio src="" controls controlsList="nodownload">')
+        modal8.setFooterContent('<audio src="assets/podcasts/Capitulo8.wav" controls controlsList="nodownload" id="audio8">')
         console.log('modal open');
     },
     onClose: function() {
-        document.querySelector('audio').pause();
+        document.querySelector('#audio8').pause();
     
         console.log('modal closed');
     },
@@ -508,11 +519,11 @@ var modal9 = new tingle.modal({
     closeLabel: "Cerrar",
     cssClass: ['custom-class-1', 'custom-class-2'],
     onOpen: function() {
-        modal9.setFooterContent('<audio src="" controls controlsList="nodownload">')
+        modal9.setFooterContent('<audio src="" controls controlsList="nodownload" id="audio9">')
         console.log('modal open');
     },
     onClose: function() {
-        document.querySelector('audio').pause();
+        document.querySelector('#audio9').pause();
     
         console.log('modal closed');
     },
@@ -530,11 +541,11 @@ var modal10 = new tingle.modal({
     closeLabel: "Cerrar",
     cssClass: ['custom-class-1', 'custom-class-2'],
     onOpen: function() {
-        modal10.setFooterContent('<audio src="" controls controlsList="nodownload">')
+        modal10.setFooterContent('<audio src="" controls controlsList="nodownload" id="audio10">')
         console.log('modal open');
     },
     onClose: function() {
-        document.querySelector('audio').pause();
+        document.querySelector('#audio10').pause();
     
         console.log('modal closed');
     },
