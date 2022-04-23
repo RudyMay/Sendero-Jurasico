@@ -53,7 +53,7 @@
                <a href="#Capitulo10" class="nav-link">Capítulo 10<br>El imperio de los mamíferos</a>
            </li>
            <li class="nav-item">
-            <a href="#Capitulo10" class="nav-link">Capítulo extra<br>Entrevista con el alcalde de progreso</a>
+            <a href="#Capitulo11" class="nav-link">Capítulo extra<br>Entrevista con el alcalde de progreso</a>
         </li>
            
            
@@ -351,10 +351,9 @@
         console.log('modal closed');
     },
     beforeClose: function() {
-        // here's goes some logic
-        // e.g. save content before closing the modal
-        return true; // close the modal
-        return false; // nothing happens
+       
+        return true; 
+        return false; 
     }
 });
 
@@ -375,10 +374,9 @@ var modal2 = new tingle.modal({
         console.log('modal closed');
     },
     beforeClose: function() {
-        // here's goes some logic
-        // e.g. save content before closing the modal
-        return true; // close the modal
-        return false; // nothing happens
+       
+        return true; 
+        return false; 
     }
 });
 
@@ -400,10 +398,9 @@ var modal3 = new tingle.modal({
         console.log('modal closed');
     },
     beforeClose: function() {
-        // here's goes some logic
-        // e.g. save content before closing the modal
-        return true; // close the modal
-        return false; // nothing happens
+       
+        return true; 
+        return false; 
     }
 });
 
@@ -424,10 +421,9 @@ var modal4 = new tingle.modal({
         console.log('modal closed');
     },
     beforeClose: function() {
-        // here's goes some logic
-        // e.g. save content before closing the modal
-        return true; // close the modal
-        return false; // nothing happens
+       
+        return true; 
+        return false; 
     }
 });
 
@@ -449,10 +445,9 @@ var modal5 = new tingle.modal({
         console.log('modal closed');
     },
     beforeClose: function() {
-        // here's goes some logic
-        // e.g. save content before closing the modal
-        return true; // close the modal
-        return false; // nothing happens
+      
+        return true; 
+        return false; 
     }
 });
 var modal6 = new tingle.modal({
@@ -471,10 +466,9 @@ var modal6 = new tingle.modal({
         console.log('modal closed');
     },
     beforeClose: function() {
-        // here's goes some logic
-        // e.g. save content before closing the modal
-        return true; // close the modal
-        return false; // nothing happens
+     
+        return true; 
+        return false; 
     }
 });
 var modal7 = new tingle.modal({
@@ -493,10 +487,9 @@ var modal7 = new tingle.modal({
         console.log('modal closed');
     },
     beforeClose: function() {
-        // here's goes some logic
-        // e.g. save content before closing the modal
-        return true; // close the modal
-        return false; // nothing happens
+       
+        return true; 
+        return false; 
     }
 });
 var modal8 = new tingle.modal({
@@ -516,10 +509,9 @@ var modal8 = new tingle.modal({
     },
     beforeClose: function() {
         
-        // here's goes some logic
-        // e.g. save content before closing the modal
-        return true; // close the modal
-        return false; // nothing happens
+       
+        return true; 
+        return false; 
     }
 });
 var modal9 = new tingle.modal({
@@ -538,10 +530,9 @@ var modal9 = new tingle.modal({
         console.log('modal closed');
     },
     beforeClose: function() {
-        // here's goes some logic
-        // e.g. save content before closing the modal
-        return true; // close the modal
-        return false; // nothing happens
+      
+        return true; 
+        return false; 
     }
 });
 var modal10 = new tingle.modal({
@@ -560,10 +551,9 @@ var modal10 = new tingle.modal({
         console.log('modal closed');
     },
     beforeClose: function() {
-        // here's goes some logic
-        // e.g. save content before closing the modal
-        return true; // close the modal
-        return false; // nothing happens
+      
+        return true; 
+        return false; 
     }
 });
 
@@ -584,10 +574,9 @@ var modal11 = new tingle.modal({
         console.log('modal closed');
     },
     beforeClose: function() {
-        // here's goes some logic
-        // e.g. save content before closing the modal
-        return true; // close the modal
-        return false; // nothing happens
+        
+        return true;
+        return false; 
     }
 });
 
@@ -598,7 +587,8 @@ var modal12 = new tingle.modal({
     closeLabel: "Cerrar",
     cssClass: ['custom-class-1', 'custom-class-2'],
     onOpen: function() {
-        modal12.setFooterContent('<audio src="assets/podcasts/Entrevista.wav" controls controlsList="nodownload" id="audio12">')
+        //modal12.setFooterContent('<audio src="assets/podcasts/Entrevista.wav" controls controlsList="nodownload" id="audio12">')
+        modal12.setFooterContent('<audio src="https://misionadmision-informacion.s3.us-west-2.amazonaws.com/Entrevista.wav" controls controlsList="nodownload" id="audio12">')
         console.log('modal open');
     },
     onClose: function() {
@@ -607,14 +597,11 @@ var modal12 = new tingle.modal({
         console.log('modal closed');
     },
     beforeClose: function() {
-        // here's goes some logic
-        // e.g. save content before closing the modal
-        return true; // close the modal
-        return false; // nothing happens
+     
+        return true; 
+        return false; 
     }
 });
-
-// set content
 
 
 </script>
