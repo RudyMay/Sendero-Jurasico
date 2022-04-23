@@ -52,6 +52,9 @@
            <li class="nav-item">
                <a href="#Capitulo10" class="nav-link">Capítulo 10<br>El imperio de los mamíferos</a>
            </li>
+           <li class="nav-item">
+            <a href="#Capitulo10" class="nav-link">Capítulo extra<br>Entrevista con el alcalde de progreso</a>
+        </li>
            
            
             
@@ -91,7 +94,10 @@
     <h2>BIENVENIDA</h2>
     <h3>"Hola Aventurero"</h3>
     <p>¿Te apasionan los dinosaurios? <br> Llegaste al lugar correcto.</p>
-    <br>
+        <a onclick="modal11.open()">
+            <img src="assets/img/play.png" alt="" width="70px" height="auto">
+        </a>
+        <br>
         <br>
         <a  href="#Capitulo1"style="text-decoration: none!important; font-size:18px; font-family:Playfair; color:#351507; font-weight:bold; text-shadow: -.5px 0 white, 0 .5px white, .5px 0 white, 0 -.5px white;">Capítulo 1<br><br><img class="bounce2 flecha" src="assets/img/flecha.png" alt="" width="30px" ></a>
 
@@ -273,7 +279,7 @@
         </h2>
         <h3>Las cinco grandes extinciones</h3>
         <p>Seres vivos que habitaron la Tierra antes que la humanidad</p>
-        <a onclick="">
+        <a onclick="modal9.open()">
             <img src="assets/img/play.png" alt="" width="70px" height="auto">
         </a>
         
@@ -294,7 +300,24 @@
         </h2>
         <h3>El imperio de los mamíferos</h3>
         <p>Se vacían los océanos y nueva vida puebla el planeta</p>
-        <a onclick="">
+        <a onclick="modal10.open()">
+        <img src="assets/img/play.png" alt="" width="70px" height="auto">
+        </a>
+        <br>
+        <br>
+        <a href="#Capitulo11"style="text-decoration: none!important; font-size:18px; font-family:Playfair; color:#351507; font-weight:bold;text-shadow: -.5px 0 white, 0 .5px white, .5px 0 white, 0 -.5px white;">Capitulo Extra<br><br><img class="bounce2 flecha" src="assets/img/flecha.png" alt="" width="30px" ></a>
+
+    </div>
+</section>
+<section id="Capitulo11">
+    <div>
+        <img src="" class="imgCap" style="padding-top:60px !important ;" >
+        <h2>
+            B<span style="font-family: drugs; font-size: 52px;">onus</span>
+        </h2>
+        <h3>Entrevista con el alcalde de progreso</h3>
+        <p></p>
+        <a onclick="modal12.open()">
         <img src="assets/img/play.png" alt="" width="70px" height="auto">
         </a>
         <br>
@@ -336,12 +359,6 @@
 });
 
 
-
-
-
-// add a button
-
-
 var modal2 = new tingle.modal({
     footer: true,
     stickyFooter: false,
@@ -364,11 +381,6 @@ var modal2 = new tingle.modal({
         return false; // nothing happens
     }
 });
-
-
-
-// add a button
-
 
 
 
@@ -395,8 +407,6 @@ var modal3 = new tingle.modal({
     }
 });
 
-
-// add a button
 
 var modal4 = new tingle.modal({
     footer: true,
@@ -519,7 +529,7 @@ var modal9 = new tingle.modal({
     closeLabel: "Cerrar",
     cssClass: ['custom-class-1', 'custom-class-2'],
     onOpen: function() {
-        modal9.setFooterContent('<audio src="" controls controlsList="nodownload" id="audio9">')
+        modal9.setFooterContent('<audio src="assets/podcasts/Capitulo9.wav" controls controlsList="nodownload" id="audio9">')
         console.log('modal open');
     },
     onClose: function() {
@@ -541,7 +551,7 @@ var modal10 = new tingle.modal({
     closeLabel: "Cerrar",
     cssClass: ['custom-class-1', 'custom-class-2'],
     onOpen: function() {
-        modal10.setFooterContent('<audio src="" controls controlsList="nodownload" id="audio10">')
+        modal10.setFooterContent('<audio src="assets/podcasts/Capitulo10.wav" controls controlsList="nodownload" id="audio10">')
         console.log('modal open');
     },
     onClose: function() {
@@ -557,6 +567,52 @@ var modal10 = new tingle.modal({
     }
 });
 
+
+var modal11 = new tingle.modal({
+    footer: true,
+    stickyFooter: false,
+    closeMethods: ['overlay', 'button', 'escape'],
+    closeLabel: "Cerrar",
+    cssClass: ['custom-class-1', 'custom-class-2'],
+    onOpen: function() {
+        modal11.setFooterContent('<audio src="assets/podcasts/Bienvenida.wav" controls controlsList="nodownload" id="audio11">')
+        console.log('modal open');
+    },
+    onClose: function() {
+        document.querySelector('#audio11').pause();
+    
+        console.log('modal closed');
+    },
+    beforeClose: function() {
+        // here's goes some logic
+        // e.g. save content before closing the modal
+        return true; // close the modal
+        return false; // nothing happens
+    }
+});
+
+var modal12 = new tingle.modal({
+    footer: true,
+    stickyFooter: false,
+    closeMethods: ['overlay', 'button', 'escape'],
+    closeLabel: "Cerrar",
+    cssClass: ['custom-class-1', 'custom-class-2'],
+    onOpen: function() {
+        modal12.setFooterContent('<audio src="assets/podcasts/Entrevista.wav" controls controlsList="nodownload" id="audio12">')
+        console.log('modal open');
+    },
+    onClose: function() {
+        document.querySelector('#audio12').pause();
+    
+        console.log('modal closed');
+    },
+    beforeClose: function() {
+        // here's goes some logic
+        // e.g. save content before closing the modal
+        return true; // close the modal
+        return false; // nothing happens
+    }
+});
 
 // set content
 
