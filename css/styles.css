@@ -29,6 +29,10 @@
     font-family: Playfair;
     src: url(../assets/fonts/PlayfairDisplay.ttf);
 }
+
+
+
+
 html, body{
     margin: 0;
     height: -webkit-fill-available;
@@ -179,7 +183,10 @@ footer {
 @media (min-width:767px) and (max-width:800px){
     .nav-branding img{
         margin-left: 225px;
-        width: 50%;
+        width: 40%;
+    }
+    .imgCap{
+        width: 26% !important;
     }
 }
 
@@ -193,12 +200,15 @@ footer {
 }
 
 @media(min-width:767px) and (max-width:1025px){
+    #logoProgreso{
+        margin-top: 30px;
+    }
     .imgCap{
         padding-top: 100px;
         display: block;
         margin-left: auto;
         margin-right: auto;
-        width: 40%;
+        width: 22%;
     }
     #listaCapitulos{
         display: none;
@@ -219,12 +229,14 @@ footer {
        .nav-menu{
            position: fixed;
            left:-113%;
-           top:70px;
+           top:50px;
            flex-direction: column;
            background-color: #DF7243;
            width: 100%;
            text-align: center;
            transition: 0.3s;
+           height: 90vh;
+           overflow-y:scroll ;
        }
 
        .nav-item{
@@ -256,9 +268,6 @@ footer {
         margin-left: auto;
         margin-right: auto;
         width: 50%;
-    }
-    #listaCapitulos{
-        display: none;
     }
       .hamburger{
           display: block;
@@ -327,6 +336,255 @@ footer {
             margin-left: 45px;
         }
 }
+
+
+@media(max-width:1378px) and (min-width:1026px){
+    section{
+        margin:0;
+        padding:0;
+        height: 100vh;
+        width: 100vw;
+    }
+
+    section div{
+        height: 80%;
+    }
+
+    .imgCap{
+        width: 20%;
+        padding-top: 50px;
+    }
+    .nav-branding{
+        margin-left: 220%;
+    }
+
+    .hamburger{
+        display: block;
+        
+    }
+    .hamburger.active .bar:nth-child(2){
+        opacity:0;
+    }
+    .hamburger.active .bar:nth-child(1){
+     transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3){
+      transform: translateY(-8px) rotate(-45deg);
+     }
+
+     .nav-menu{
+         position: fixed;
+         left:-113%;
+         top:20px;
+         flex-direction: column;
+         background-color: #DF7243;
+         width: 100%;
+         text-align: center;
+         transition: 0.3s;
+         height: 90vh;
+     }
+
+     .nav-item{
+         list-style-type: none;
+        border-top: solid 1px white;
+          margin-left: -65px;
+          width: 90%;
+          margin-bottom: -10px;
+
+      
+     }
+     .nav-menu.active{
+         left: 0;
+         overflow-y: scroll;
+         
+     }
+
+     .nav-link{
+         text-decoration: none;
+         left: -10px;
+         font-family: drugs;
+         font-size: 20px;
+         color: white;
+     }
+     #logoProgreso{
+         padding-top: 10px;
+         width: 120px;
+     }
+    
+}
+
+@media(max-width:450px) and (min-width:400px){
+    .nav-branding img{
+        margin-left: 63px;
+    }
+}
+
+@media(max-width:399px) and (min-width:350px){
+      .nav-branding img{
+          margin-left: 45px;
+      }
+}
+
+
+@media(max-width:1800px) and (min-width:1400px) { 
+  section{
+      margin:0;
+      padding:0;
+      height: 100vh;
+      width: 100vw;
+  }
+
+  section div{
+      height: 80%;
+  }
+
+  .imgCap{
+      width: 20%;
+      padding-top: 50px;
+  }
+  .nav-branding{
+      margin-left: 227%;
+  }
+
+
+
+  .hamburger{
+      display: block;
+      
+  }
+  .hamburger.active .bar:nth-child(2){
+      opacity:0;
+  }
+  .hamburger.active .bar:nth-child(1){
+   transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3){
+    transform: translateY(-8px) rotate(-45deg);
+   }
+
+   .nav-menu{
+       position: fixed;
+       left:-113%;
+       top:20px;
+       flex-direction: column;
+       background-color: #DF7243;
+       width: 100%;
+       text-align: center;
+       transition: 0.3s;
+       height: 90vh;
+   }
+
+   .nav-item{
+       list-style-type: none;
+      border-top: solid 1px white;
+        margin-left: -65px;
+        width: 90%;
+        margin-bottom: -10px;
+
+    
+   }
+   .nav-menu.active{
+       left: 0;
+       overflow-y: scroll;
+       
+   }
+
+   .nav-link{
+       text-decoration: none;
+       left: -10px;
+       font-family: drugs;
+       font-size: 20px;
+       color: white;
+   }
+   #logoProgreso{
+       padding-top: 10px;
+       width: 120px;
+   }
+  
+}
+
+
+@media only screen and (min-width:1850px ) {
+ #Intro{
+     
+ }
+    .nav-branding{
+     margin-left: 320%;
+ }
+ section{
+    margin:0;
+    padding:0;
+    height: 100vh;
+    width: 100vw;
+}
+
+section div{
+    height: 80%;
+}
+
+.imgCap{
+    width: 30%;
+    padding-top: 50px;
+}
+
+.hamburger{
+    display: block;
+    
+}
+.hamburger.active .bar:nth-child(2){
+    opacity:0;
+}
+.hamburger.active .bar:nth-child(1){
+ transform: translateY(8px) rotate(45deg);
+}
+.hamburger.active .bar:nth-child(3){
+  transform: translateY(-8px) rotate(-45deg);
+ }
+
+ .nav-menu{
+     position: fixed;
+     left:-113%;
+     top:20px;
+     flex-direction: column;
+     background-color: #DF7243;
+     width: 100%;
+     text-align: center;
+     transition: 0.3s;
+     height: 90vh;
+ }
+
+ .nav-item{
+     list-style-type: none;
+    border-top: solid 1px white;
+      margin-left: -65px;
+      width: 90%;
+      margin-bottom: -10px;
+
+  
+ }
+ .nav-menu.active{
+     left: 0;
+     overflow-y: scroll;
+     
+ }
+
+ .nav-link{
+     text-decoration: none;
+     left: -10px;
+     font-family: drugs;
+     font-size: 20px;
+     color: white;
+ }
+ #logoProgreso{
+     padding-top: 10px;
+     width: 120px;
+ }
+
+}
+
+
+
+
 
 .bounce2 {
     animation: bounce2 2s ease infinite;
