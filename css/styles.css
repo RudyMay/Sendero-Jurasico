@@ -88,7 +88,7 @@ nav{
 }
 
 section{
-  
+  max-width: 100vw;
     min-height: 100vh;
     scroll-snap-align: start;
     
@@ -339,6 +339,9 @@ footer {
 
 
 @media(max-width:1378px) and (min-width:1026px){
+    body{
+        background-image: url(../assets/img/tierra.png);
+    }
     section{
         margin:0;
         padding:0;
@@ -427,11 +430,16 @@ footer {
 
 
 @media(max-width:1800px) and (min-width:1400px) { 
-  section{
+  body{
+      background-image: url(../assets/img/Fondo5.jpg);
+      background-size: cover;
+  }
+    section{
+        
       margin:0;
       padding:0;
-      height: 100vh;
-      width: 100vw;
+      max-height: 100vh;
+     max-width: 100vw;
   }
 
   section div{
@@ -443,7 +451,7 @@ footer {
       padding-top: 50px;
   }
   .nav-branding{
-      margin-left: 227%;
+      margin-left: 230%;
   }
 
 
@@ -505,11 +513,11 @@ footer {
 
 
 @media only screen and (min-width:1850px ) {
- #Intro{
-     
+ body{
+     overflow-x: hidden;
  }
     .nav-branding{
-     margin-left: 320%;
+     margin-left: 330%;
  }
  section{
     margin:0;
@@ -519,11 +527,13 @@ footer {
 }
 
 section div{
+    width: 90%;
     height: 80%;
+    margin: 0;
 }
 
 .imgCap{
-    width: 30%;
+    width: 20%;
     padding-top: 50px;
 }
 
