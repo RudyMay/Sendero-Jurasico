@@ -515,15 +515,17 @@ footer {
 @media only screen and (min-width:1850px ) {
  body{
      overflow-x: hidden;
+     background-image: url(../assets/img/Fondo5.jpg);
+      background-size: cover;
  }
     .nav-branding{
-     margin-left: 330%;
+     margin-left: 320%;
  }
  section{
     margin:0;
     padding:0;
-    height: 100vh;
-    width: 100vw;
+    min-height: 100vh;
+    max-width: 100vw;
 }
 
 section div{
