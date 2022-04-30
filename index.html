@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -79,7 +79,7 @@
 </div>
 </section>
 <section id="Bienvenida" >
-    <div>
+    <div class="esp" >
         <img src="assets/img/Bienvenida.png" class="imgCap">
 
     <h2>BIENVENIDA</h2>
@@ -91,6 +91,22 @@
         <br>
         <br>
         <a  href="#Capitulo1"style="text-decoration: none!important; font-size:18px; font-family:Playfair; color:#351507; font-weight:bold; text-shadow: -.5px 0 white, 0 .5px white, .5px 0 white, 0 -.5px white;">Capítulo 1<br><br><img class="bounce2 flecha" src="assets/img/flecha.png" alt="" width="30px" ></a>
+
+    </div>
+
+
+    <div class="eng"  style="display: none;">
+        <img src="assets/img/Bienvenida.png" class="imgCap">
+
+    <h2>WELCOME</h2>
+    <h3>"Hi Adventurer"</h3>
+    <p>Do You Love dinosaurs? <br> You came to the right place.</p>
+        <a onclick="modal11.open()">
+            <img src="assets/img/play.png" alt="" width="70px" height="auto" class="playbtn" >
+        </a>
+        <br>
+        <br>
+        <a  href="#Capitulo1"style="text-decoration: none!important; font-size:18px; font-family:Playfair; color:#351507; font-weight:bold; text-shadow: -.5px 0 white, 0 .5px white, .5px 0 white, 0 -.5px white;">Chapter 1<br><br><img class="bounce2 flecha" src="assets/img/flecha.png" alt="" width="30px" ></a>
 
     </div>
     
@@ -305,13 +321,19 @@
 
     </div>
 </section>
-<!--<footer>
-    <h2>IDIOMAS</h2>
-</footer>-->
+<footer>
+	<div class="switch">
+	    <input id="language-toggle" class="check-toggle check-toggle-round-flat" type="checkbox">
+	    <label for="language-toggle"></label>
+	    <span class="on">MX</span>
+	    <span class="off">EN</span>
+  	</div>
+</footer>
 
 
 <script src="javascript/main.js"></script>
 <script src="javascript/tingle.js"></script>
+<script src="javascript/lenguajes.js"></script>
 <script>
     var modal = new tingle.modal({
         
