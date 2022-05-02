@@ -84,7 +84,7 @@ nav{
 
 .nav-branding img{
     display: block;
-    margin-left: 15px;
+    margin-left: 25px;
 }
 
 section{
@@ -301,7 +301,7 @@ footer {
 @media (min-width:767px) and (max-width:800px){
     .nav-branding img{
         margin-left: 225px;
-        width: 40%;
+        width: 30%;
     }
     .imgCap{
         width: 26% !important;
@@ -311,8 +311,8 @@ footer {
 
 @media (min-width:900px) and (max-width:1025px){
     .nav-branding img{
-        margin-left: 324px;
-        width: 45%;
+        margin-left: 345px;
+        width: 25%;
     }
 
 }
@@ -458,7 +458,7 @@ footer {
 
 @media(max-width:1378px) and (min-width:1026px){
     body{
-        background-image: url(../assets/img/tierra.png);
+       
     }
     section{
         margin:0;
@@ -536,7 +536,7 @@ footer {
 
 @media(max-width:450px) and (min-width:400px){
     .nav-branding img{
-        margin-left: 63px;
+        margin-left: 75px;
     }
 }
 
@@ -569,7 +569,7 @@ footer {
       padding-top: 50px;
   }
   .nav-branding{
-      margin-left: 230%;
+      margin-left: 255%;
   }
 
 
@@ -637,8 +637,13 @@ footer {
       background-size: cover;
  }
     .nav-branding{
-     margin-left: 320%;
+     margin-left: 240%;
+    
  }
+ .nav-branding img{
+     width: 250px;
+ }
+
  section{
     margin:0;
     padding:0;
@@ -654,7 +659,7 @@ section div{
 
 .imgCap{
     width: 20%;
-    padding-top: 50px;
+   
 }
 
 .hamburger{

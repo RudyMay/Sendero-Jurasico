@@ -1,10 +1,13 @@
 const hamburger = document.querySelector(".hamburger");
-const navMenu = document.querySelector(".nav-menu");
-const flechas = document.querySelectorAll('.flecha')
+const navMenu = document.querySelectorAll(".nav-menu");
+const flechas = document.querySelectorAll('.flecha');
 
 hamburger.addEventListener("click", ()=>{
     hamburger.classList.toggle("active");
-    navMenu.classList.toggle("active");
+    for(let nav of navMenu){
+        nav.classList.toggle("active");
+    }
+    
     
 
     if(hamburger.classList.contains("active")){
@@ -22,7 +25,10 @@ hamburger.addEventListener("click", ()=>{
 
 document.querySelectorAll(".nav-link").forEach(n=>n.addEventListener("click",()=>{
     hamburger.classList.remove("active");
-    navMenu.classList.remove("active");
+    for (let nav of navMenu){
+        nav.classList.remove("active");
+    }
+   
     
 }))
 
