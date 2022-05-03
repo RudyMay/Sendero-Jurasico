@@ -306,6 +306,9 @@ footer {
     .imgCap{
         width: 26% !important;
     }
+    .playbtn{
+        width: 70px;
+    }
 }
 
 
@@ -314,7 +317,9 @@ footer {
         margin-left: 345px;
         width: 25%;
     }
-
+    .playbtn{
+        width: 80px;
+    }
 }
 
 @media(min-width:767px) and (max-width:1025px){
@@ -531,7 +536,9 @@ footer {
          padding-top: 10px;
          width: 120px;
      }
-    
+    .playbtn{
+        width: 80px;
+    }
 }
 
 @media(max-width:450px) and (min-width:400px){
@@ -626,7 +633,9 @@ footer {
        padding-top: 10px;
        width: 120px;
    }
-  
+  .playbtn{
+      width:80px;
+  }
 }
 
 
@@ -643,6 +652,9 @@ footer {
  .nav-branding img{
      width: 250px;
  }
+.playbtn{
+    width: 80px;
+}
 
  section{
     margin:0;
