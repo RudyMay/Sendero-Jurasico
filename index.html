@@ -622,6 +622,7 @@
     closeLabel: "Cerrar",
     cssClass: ['custom-class-1', 'custom-class-2'],
     onOpen: function() {
+        modal.setContent('<h2>Capítulo 1</h2><h3>El sendero de la quinta gran extinción</h3><p>El día que el cielo arremetió contra la Tierra fue el último para los dinosaurios. Fue el momento en el que el triceratops comió su ensalada final, la última vez que el tiranosaurio rex anduvo suelto en busca de un filete y que el pterodáctilo reinó en el aire… La tragedia llegó desde el espacio exterior, hace 66 millones de años. Todo comenzó aquí, en Chicxulub, el lugar donde te encuentras a punto de recorrer el Sendero Jurásico.<br><br>Junto con los seres más grandes del mundo, desapareció el 76 por ciento de las especies. La catástrofe eliminó a 7 de cada 10 plantas y sólo sobrevivieron 3 de cada 10 animales. Entre los animales que no lograron llegar a nuestra época se encuentran reptiles marinos y voladores. El curso de la vida en el planeta Tierra cambió y de las cenizas de esta tragedia surgió una nueva especie dominante: los mamíferos. <br><br>La evidencia de estos hechos está oculta bajo el suelo de Yucatán. Entre el agua y la superficie terrestre se encuentra el cráter de Chicxulub, uno de los tres más grandes del planeta que conserva la capa de eyecta, es decir, el material lanzado fuera del cráter.<br><br>Este cráter mide 200 kilómetros de diámetro. Su centro está en Chicxulub Puerto, aquí donde puedes escuchar a los niños carcajearse y a los hombres de mar preparándose para la pesca. Es como si no vivieran justo en medio del colosal agujero, prueba del impacto que causó la quinta extinción masiva de la vida en la Tierra<br><br>Este Sendero Jurásico es un espacio donde conocerás qué pasó cuando el gigantesco meteorito se estrelló contra nuestro mundo, en el sur del Golfo de México. Aquí podrás satisfacer tu curiosidad al explorar los sitios que el Ayuntamiento de Progreso y un grupo de expertos diseñaron para ti; sabrás lo que dice la ciencia de este histórico momento y, te garantizamos que te divertirás. </p>')
         modal.setFooterContent('<audio src="assets/podcasts/Capitulo-1.wav" controls controlsList="nodownload" id="audio1">')
     },
     onClose: function() {
@@ -856,8 +857,8 @@ var modal12 = new tingle.modal({
     closeLabel: "Cerrar",
     cssClass: ['custom-class-1', 'custom-class-2'],
     onOpen: function() {
-        //modal12.setFooterContent('<audio src="assets/podcasts/Entrevista.wav" controls controlsList="nodownload" id="audio12">')
-        modal12.setFooterContent('<audio src="https://misionadmision-informacion.s3.us-west-2.amazonaws.com/Entrevista.wav" controls controlsList="nodownload" id="audio12">')
+        modal12.setFooterContent('<audio src="assets/podcasts/Entrevista.wav" controls controlsList="nodownload" id="audio12">')
+        //modal12.setFooterContent('<audio src="https://misionadmision-informacion.s3.us-west-2.amazonaws.com/Entrevista.wav" controls controlsList="nodownload" id="audio12">')
     },
     onClose: function() {
         document.querySelector('#audio12').pause();
@@ -1119,8 +1120,8 @@ var modal24 = new tingle.modal({
     closeLabel: "Cerrar",
     cssClass: ['custom-class-1', 'custom-class-2'],
     onOpen: function() {
-    modal24.setFooterContent('<audio src="https://misionadmision-informacion.s3.us-west-2.amazonaws.com/Interview.wav" controls controlsList="nodownload" id="audio24">')
-            //modal24.setFooterContent('<audio src="assets/podcasts/eng/Interview.wav" controls controlsList="nodownload" id="audio24">')
+    //modal24.setFooterContent('<audio src="https://misionadmision-informacion.s3.us-west-2.amazonaws.com/Interview.wav" controls controlsList="nodownload" id="audio24">')
+            modal24.setFooterContent('<audio src="assets/podcasts/eng/Interview.wav" controls controlsList="nodownload" id="audio24">')
     },
     onClose: function() {
         document.querySelector('#audio24').pause();

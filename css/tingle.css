@@ -76,6 +76,7 @@
   margin-top: -50px;
   margin-bottom: auto;
   width: 80%;
+
   border-radius: 4px;
   background: #fff;
   opacity: 1;
@@ -86,14 +87,17 @@
 
 .tingle-modal-box__content {
   padding: 3rem 3rem;
-  background-image: url(../assets/img/logo.png);
-  background-size: cover;
+  background-color: #DF7243;
+  color: white;
+  height: 50vh;
   background-repeat: no-repeat;
+  overflow: scroll;
+  
   
 }
 
 .tingle-modal-box__footer {
-  padding: 1.5rem 2rem;
+  /*padding: 1.5rem 2rem;*/
   width: auto;
   border-bottom-right-radius: 4px;
   border-bottom-left-radius: 4px;
@@ -196,13 +200,13 @@
   .tingle-modal-box {
     width: auto;
     border-radius: 0;
-    margin-top: 150px;
+    margin-top: 20px;
     
   }
 
   .tingle-modal-box__content {
     overflow-y: scroll;
-    height: 136px;
+    height: 50vh;
   
    
   }
@@ -264,13 +268,13 @@
   .tingle-modal-box {
     width: auto;
     border-radius: 0;
-    margin-top: 150px;
+    margin-top: 20px;
     
   }
 
   .tingle-modal-box__content {
     overflow-y: scroll;
-    height: 167px;
+    height: 50vh;
   
    
   }
