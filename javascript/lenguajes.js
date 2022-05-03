@@ -5,7 +5,7 @@ Lenges.addEventListener("click", ()=>{
    
     if(Lenges.checked==false){
         
-        console.log("mx")
+        
         const esp= document.querySelectorAll('.esp')
         console.log(esp)
         for(let espanish of esp){
@@ -14,7 +14,6 @@ Lenges.addEventListener("click", ()=>{
         
         
         const eng = document.querySelectorAll('.eng')
-        console.log(eng)
         for(let english of eng){
             english.style.display="none"
         }
@@ -22,7 +21,7 @@ Lenges.addEventListener("click", ()=>{
     }
 
     if(Lenges.checked==true){
-        console.log("usa")
+      
         const esp= document.querySelectorAll('.esp')
         console.log(esp)
         for(let espanish of esp){
@@ -31,7 +30,7 @@ Lenges.addEventListener("click", ()=>{
         
         
         const eng = document.querySelectorAll('.eng')
-        console.log(eng)
+      
         for(let english of eng){
             english.style.display="block"
         }
