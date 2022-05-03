@@ -867,8 +867,8 @@ var modal12 = new tingle.modal({
     closeLabel: "Cerrar",
     cssClass: ['custom-class-1', 'custom-class-2'],
     onOpen: function() {
-        modal12.setFooterContent('<audio src="assets/podcasts/Entrevista.wav" controls controlsList="nodownload" id="audio12">')
-        //modal12.setFooterContent('<audio src="https://misionadmision-informacion.s3.us-west-2.amazonaws.com/Entrevista.wav" controls controlsList="nodownload" id="audio12">')
+        //modal12.setFooterContent('<audio src="assets/podcasts/Entrevista.wav" controls controlsList="nodownload" id="audio12">')
+        modal12.setFooterContent('<audio src="https://misionadmision-informacion.s3.us-west-2.amazonaws.com/Entrevista.wav" controls controlsList="nodownload" id="audio12">')
         console.log('modal open');
     },
     onClose: function() {
@@ -1136,7 +1136,7 @@ var modal23 = new tingle.modal({
     }
 });
 
-var modal124 = new tingle.modal({
+var modal24 = new tingle.modal({
     footer: true,
     stickyFooter: false,
     closeMethods: ['overlay', 'button', 'escape'],
