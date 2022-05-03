@@ -35,8 +35,8 @@ document.querySelectorAll(".nav-link").forEach(n=>n.addEventListener("click",()=
 if(window.innerHeight<=680){
     console.log('menor');
 
-    document.querySelector('#Intro div p').style="font-size:18px";
-    document.querySelector('#Intro div h2').style="font-size:28px";
+    document.querySelector('#Intro div p').style="font-size:14px";
+    document.querySelector('#Intro div h2').style="font-size:20px";
    const seccionesh2= document.querySelectorAll('section div h2')
     const seccionesspan= document.querySelectorAll('section div h2 span')
     const seccionesh3 =document.querySelectorAll('section div h3')
@@ -44,22 +44,22 @@ if(window.innerHeight<=680){
    const botones= document.querySelectorAll('.playbtn')
     
    for(let sect4 of seccionesspan){
-        sect4.style.fontSize= "38px";
+        sect4.style.fontSize= "30px";
     }
 
     for(let sect of seccionesh2 ){
-        sect.style.fontSize="24px";
+        sect.style.fontSize="20px";
     }
     
     for(let sect2 of seccionesh3){
-        sect2.style.fontSize= "20px";
+        sect2.style.fontSize= "16px";
     }
     
     for(sect3 of seccionesp){
-        sect3.style.fontSize="16px";
+        sect3.style.fontSize="12px";
     }
 
    for(let boton of botones){
-       boton.style.width="50px";
+       boton.style.width="30px";
    }
 }
