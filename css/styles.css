@@ -105,7 +105,7 @@ section div{
 
 section div h2{
     margin: 20px;
-    font-size: 32px;
+    font-size: 28px;
     font-family:Dinosaur2;
     color:#351507;
     letter-spacing: 3px;
@@ -130,7 +130,7 @@ section div h2{
 section div h3{
     font-family: drugs;
     letter-spacing: 1px;
-    font-size: 28px;
+    font-size: 24px;
     color:#351507;
     text-shadow: -.5px 0 white, 0 .5px white, .5px 0 white, 0 -.5px white;
 
@@ -139,7 +139,7 @@ section div h3{
 
 section div p{
     font-family: Playfair;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: bold;
     color: #351507;
     margin-left: 10px;
