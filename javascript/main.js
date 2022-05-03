@@ -34,7 +34,7 @@ document.querySelectorAll(".nav-link").forEach(n=>n.addEventListener("click",()=
 
 if(window.innerHeight<=680){
     console.log('menor');
-
+    const imagenes=document.querySelectorAll('.imgCap');
     document.querySelector('#Intro div p').style="font-size:14px";
     document.querySelector('#Intro div h2').style="font-size:20px";
    const seccionesh2= document.querySelectorAll('section div h2')
@@ -61,5 +61,8 @@ if(window.innerHeight<=680){
 
    for(let boton of botones){
        boton.style.width="30px";
+   }
+   for(img of imagenes){
+       img.style.width="40%"
    }
 }
