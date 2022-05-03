@@ -38,6 +38,7 @@ html, body{
     height: -webkit-fill-available;
     scroll-behavior: smooth;  
     background-image: url(../assets/img/Fondo3.png);
+    background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     scroll-snap-type: y mandatory;
