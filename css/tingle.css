@@ -96,6 +96,10 @@
   
 }
 
+ audio{
+  width: 100%;
+}
+
 .tingle-modal-box__footer {
   padding: 0.5rem 1rem;
   width: auto;

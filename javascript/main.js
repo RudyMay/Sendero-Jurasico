@@ -2,6 +2,7 @@ const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelectorAll(".nav-menu");
 const flechas = document.querySelectorAll('.flecha');
 
+
 hamburger.addEventListener("click", ()=>{
     hamburger.classList.toggle("active");
     for(let nav of navMenu){
